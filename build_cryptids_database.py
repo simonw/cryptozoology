@@ -9,6 +9,7 @@ BASE_DIR = os.path.dirname(__file__)
 try_these = (
     "/usr/local/lib/mod_spatialite.dylib",
     "/usr/lib/x86_64-linux-gnu/mod_spatialite.so",
+    "/usr/lib/x86_64-linux-gnu/libspatialite.so.5",
 )
 
 
