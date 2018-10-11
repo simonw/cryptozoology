@@ -27,8 +27,8 @@ def insert_record(conn, id, geojson):
         geojson["properties"]["wikipedia_url"],
         geojson["properties"].get("additional_url"),
         geojson["properties"]["description"],
-        geojson["properties"]["first_sighted"],
-        geojson["properties"]["last_sighted"],
+        geojson["properties"].get("first_sighted") or "",
+        geojson["properties"].get("last_sighted") or "",
         poly.wkt,
     ))
 
