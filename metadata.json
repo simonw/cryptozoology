@@ -1,0 +1,18 @@
+{
+  "title": "Cryptids and their ranges",
+  "license": "CC Attribution 4.0 License",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source": "simonw/cryptozoology",
+  "source_url": "https://github.com/simonw/cryptozoology",
+  "databases": {
+    "cryptids": {
+      "queries": {
+        "by_point": {
+          "name": "ranges_by_point",
+          "sql": "select id, name, description\nfrom\n    cryptids\nwhere\n    within(GeomFromText('POINT(' || :longitude || ' ' || :latitude || ')'), cryptids.geom)\n    and rowid in (\n        SELECT pkid FROM idx_cryptids_geom\n        where xmin < :longitude\n        and xmax > :longitude\n        and ymin < :latitude\n        and ymax > :latitude\n    )",
+          "title": "Find cryptids with range encompassing a lat/lon"
+        }
+      }
+    }
+  }
+}
