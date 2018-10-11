@@ -13,7 +13,7 @@ script:
 jobs:
   include:
     - stage: deploy cryptids.datasettes.com
-      if: branch = master AND type = push
+      if: branch = travis AND type = push
       script:
         - pip install datasette
         - npm install -g now
