@@ -9,7 +9,7 @@
       "queries": {
         "by_point": {
           "name": "ranges_by_point",
-          "sql": "select id, name, description\nfrom\n    cryptids\nwhere\n    within(GeomFromText('POINT(' || :longitude || ' ' || :latitude || ')'), cryptids.geom)\n    and rowid in (\n        SELECT pkid FROM idx_cryptids_geom\n        where xmin < :longitude\n        and xmax > :longitude\n        and ymin < :latitude\n        and ymax > :latitude\n    )",
+          "sql": "select\n    id, name, description,\n    wikipedia_url, additional_url,\n    first_sighted, last_sighted,\n    ASgeoJSON(geom) as range\nfrom\n    cryptids\nwhere\n    within(GeomFromText('POINT(' || :longitude || ' ' || :latitude || ')'), cryptids.geom)\n    and rowid in (\n        SELECT pkid FROM idx_cryptids_geom\n        where xmin < :longitude\n        and xmax > :longitude\n        and ymin < :latitude\n        and ymax > :latitude\n    )\n",
           "title": "Find cryptids with range encompassing a lat/lon"
         }
       }
