@@ -12,5 +12,5 @@ before_script:
 - sudo apt-get install -y spatialite-bin libspatialite5
 script: python build_cryptids_database.py
 after_script:
-- datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids
+- datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
 - now alias --token=$NOW_TOKEN
