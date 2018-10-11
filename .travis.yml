@@ -3,10 +3,14 @@ python:
 - "3.6"
 branches:
   only:
-    - travis
+    - master
 before_script:
 - pip install -r requirements.txt
+- pip install datasette
+- npm install -g now
 - sudo apt-get update
 - sudo apt-get install -y spatialite-bin libspatialite5
-- ls -lah /usr/lib/x86_64-linux-gnu/
 script: python build_cryptids_database.py
+after_script:
+- datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids
+- now alias --token=$NOW_TOKEN
