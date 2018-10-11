@@ -1,16 +1,21 @@
 language: python
 python:
 - "3.6"
-branches:
-  only:
-    - master
+
 before_script:
 - pip install -r requirements.txt
-- pip install datasette
-- npm install -g now
 - sudo apt-get update
 - sudo apt-get install -y spatialite-bin libspatialite5
-script: python build_cryptids_database.py
-after_script:
-- datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
-- now alias --token=$NOW_TOKEN
+
+script:
+- python build_cryptids_database.py
+
+jobs:
+  include:
+    - stage: deploy cryptids.datasettes.com
+      if: branch = master AND type = push
+      script:
+        - pip install datasette
+        - npm install -g now
+        - datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
+        - now alias --token=$NOW_TOKEN
