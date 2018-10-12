@@ -1,8 +1,12 @@
 import sqlite3
+from functools import partial, wraps
 import json
 import os
+import pyproj
 from shapely.geometry.multipolygon import MultiPolygon
 from shapely.geometry import shape
+from shapely.ops import transform
+
 
 BASE_DIR = os.path.dirname(__file__)
 
@@ -15,8 +19,11 @@ try_these = (
 
 def insert_record(conn, id, geojson):
     poly = shape(geojson['geometry'])
-    if poly.geom_type == "Polygon":
-        poly = MultiPolygon([poly])
+    # Buffer by 5 miles - if you are within 5 miles of a lake you should
+    # still hear about the lake monster!
+    buffered_poly = buffer_polygon_in_meters(poly, 5 * 1600)
+    if buffered_poly.geom_type == "Polygon":
+        buffered_poly = MultiPolygon([buffered_poly])
     conn.execute("""
         INSERT INTO cryptids (
             id, name, wikipedia_url, additional_url, description, first_sighted, last_sighted, geom)
@@ -29,7 +36,7 @@ def insert_record(conn, id, geojson):
         geojson["properties"]["description"],
         geojson["properties"].get("first_sighted") or "",
         geojson["properties"].get("last_sighted") or "",
-        poly.wkt,
+        buffered_poly.wkt,
     ))
 
 
@@ -63,6 +70,47 @@ def build_database(dbpath="cryptids.db"):
             insert_record(conn, id, json.load(open(filepath)))
     conn.commit()
     conn.close()
+
+
+wgs84 = pyproj.Proj("+init=EPSG:4326")
+
+
+def process_wgs84_in_meters(fn):
+    # Given a function which takes a polygon as the
+    # first argument, this decorator ensures that
+    # the polygon will first be transformed to a custom
+    # aeqd projection centered around the center of that
+    # polygon, which operates in meters. This newly
+    # transformed polygon will be passed to the real
+    # function, which can then operate on it using meters
+    # as the units. It can return a polygon-in-meters
+    # which will then be transformed back to wgs84
+    @wraps(fn)
+    def wrapper(polygon, *args, **kwargs):
+        # Custom aeqd projection centered on the polygon centroid
+        centroid = polygon.centroid
+        custom_projection = pyproj.Proj(
+            "+proj=aeqd +lat_0=%s +lon_0=%s +units=m" % (centroid.y, centroid.x)
+        )
+        project = partial(pyproj.transform, wgs84, custom_projection)
+        polygon_in_m = transform(project, polygon)
+        # Actually run the decorated function
+        resulting_polygon_in_m = fn(polygon_in_m, *args, **kwargs)
+        # Convert back to wgs84 again
+        reverse_project = partial(pyproj.transform, custom_projection, wgs84)
+        return transform(reverse_project, resulting_polygon_in_m)
+
+    return wrapper
+
+
+@process_wgs84_in_meters
+def buffer_polygon_in_meters(polygon, meters):
+    # Given a shapely polygon with its points
+    # defined using lat/lon, return a polygon
+    # representing the input expanded in all
+    # directions by X meters.
+    return polygon.buffer(meters)
+
 
 if __name__ == "__main__":
     build_database()
