@@ -26,14 +26,15 @@ def insert_record(conn, id, geojson):
         buffered_poly = MultiPolygon([buffered_poly])
     conn.execute("""
         INSERT INTO cryptids (
-            id, name, wikipedia_url, additional_url, description, first_sighted, last_sighted, geom)
-        VALUES(?, ?, ?, ?, ?, ?, ?, GeomFromText(?, 4326))
+            id, name, wikipedia_url, additional_url, description, copyright, first_sighted, last_sighted, geom)
+        VALUES(?, ?, ?, ?, ?, ?, ?, ?, GeomFromText(?, 4326))
     """, (
         id,
         geojson["properties"]["name"],
         geojson["properties"].get("wikipedia_url"),
         geojson["properties"].get("additional_url"),
         geojson["properties"]["description"],
+        geojson["properties"].get("copyright"),
         geojson["properties"].get("first_sighted") or "",
         geojson["properties"].get("last_sighted") or "",
         buffered_poly.wkt,
@@ -56,6 +57,7 @@ def build_database(dbpath="cryptids.db"):
             wikipedia_url text,
             additional_url text,
             description text,
+            copyright text,
             first_sighted integer,
             last_sighted integer
         )
