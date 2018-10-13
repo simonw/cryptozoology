@@ -13,9 +13,11 @@ jobs:
       - python build_cryptids_database.py
     - stage: deploy cryptids.datasettes.com
       if: branch = master AND type = push
+      before_script:
+      - pip install datasette
+      - npm install -g now
       script:
-        - pip install datasette
-        - npm install -g now
-        - python build_cryptids_database.py
-        - datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
-        - now alias --token=$NOW_TOKEN
+      - python build_cryptids_database.py
+      after_success:
+      - datasette publish now cryptids.db --spatialite -m metadata.json --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
+      - now alias --token=$NOW_TOKEN
