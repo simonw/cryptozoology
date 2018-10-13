@@ -22,12 +22,14 @@ def insert_record(conn, id, geojson):
     # Buffer by 5 miles - if you are within 5 miles of a lake you should
     # still hear about the lake monster!
     buffered_poly = buffer_polygon_in_meters(poly, 5 * 1600)
+    if poly.geom_type == "Polygon":
+        poly = MultiPolygon([poly])
     if buffered_poly.geom_type == "Polygon":
         buffered_poly = MultiPolygon([buffered_poly])
     conn.execute("""
         INSERT INTO cryptids (
-            id, name, wikipedia_url, additional_url, description, copyright, first_sighted, last_sighted, geom)
-        VALUES(?, ?, ?, ?, ?, ?, ?, ?, GeomFromText(?, 4326))
+            id, name, wikipedia_url, additional_url, description, copyright, first_sighted, last_sighted, geom, range)
+        VALUES(?, ?, ?, ?, ?, ?, ?, ?, GeomFromText(?, 4326), GeomFromText(?, 4326))
     """, (
         id,
         geojson["properties"]["name"],
@@ -38,6 +40,7 @@ def insert_record(conn, id, geojson):
         geojson["properties"].get("first_sighted") or "",
         geojson["properties"].get("last_sighted") or "",
         buffered_poly.wkt,
+        poly.wkt,
     ))
 
 
@@ -64,6 +67,8 @@ def build_database(dbpath="cryptids.db"):
     ''')
     conn.execute("SELECT AddGeometryColumn('cryptids', 'geom', 4326, 'MULTIPOLYGON', 2);")
     conn.execute("SELECT CreateSpatialIndex('cryptids', 'geom');")
+    conn.execute("SELECT AddGeometryColumn('cryptids', 'range', 4326, 'MULTIPOLYGON', 2);")
+    conn.execute("SELECT CreateSpatialIndex('cryptids', 'range');")
     # Loop through and insert the records
     for filename in os.listdir(os.path.join(BASE_DIR, 'cryptids')):
         filepath = os.path.join(BASE_DIR, 'cryptids', filename)
