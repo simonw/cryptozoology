@@ -31,7 +31,7 @@ def insert_record(conn, id, geojson):
     """, (
         id,
         geojson["properties"]["name"],
-        geojson["properties"]["wikipedia_url"],
+        geojson["properties"].get("wikipedia_url"),
         geojson["properties"].get("additional_url"),
         geojson["properties"]["description"],
         geojson["properties"].get("first_sighted") or "",
