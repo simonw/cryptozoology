@@ -1,0 +1,61 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Snake-Headed Dog",
+    "description": "5ft long, sleek serpentine head, red reptilian eyes, a slender neck, shaggy black fur, long hind limbs, shorter forelimbs, and no tail at all",
+    "additional_url": "http://cryptidz.wikia.com/wiki/Snake-Headed_Dog",
+    "first_sighted": 1996,
+    "last_sighted": 1996
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -121.60354614257812,
+          39.84834871293334
+        ],
+        [
+          -121.60938262939453,
+          39.83991351720244
+        ],
+        [
+          -121.61590576171876,
+          39.825676774633244
+        ],
+        [
+          -121.61796569824219,
+          39.80721734644256
+        ],
+        [
+          -121.60457611083983,
+          39.7958755252971
+        ],
+        [
+          -121.58706665039062,
+          39.78954439311165
+        ],
+        [
+          -121.56818389892578,
+          39.80062349201905
+        ],
+        [
+          -121.55582427978514,
+          39.81407428424413
+        ],
+        [
+          -121.56097412109375,
+          39.82778610787324
+        ],
+        [
+          -121.56818389892578,
+          39.84834871293334
+        ],
+        [
+          -121.60354614257812,
+          39.84834871293334
+        ]
+      ]
+    ]
+  }
+}
