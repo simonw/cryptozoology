@@ -22,5 +22,5 @@ jobs:
       script:
       - python build_cryptids_database.py
       after_success:
-      - datasette publish now cryptids.db --spatialite -m metadata.json --template-dir=templates --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson
+      - datasette publish now cryptids.db --spatialite -m metadata.json --template-dir=templates --token=$NOW_TOKEN --name=cryptids --install=datasette-leaflet-geojson --install=datasette-cluster-map --install=datasette-haversine
       - now alias --token=$NOW_TOKEN
