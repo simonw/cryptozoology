@@ -8,7 +8,7 @@ jobs:
       before_script:
       - pip install -r requirements.txt
       - sudo apt-get update
-      - sudo apt-get install -y spatialite-bin libspatialite5
+      - sudo apt-get install -y spatialite-bin libspatialite3
       script:
       - python build_cryptids_database.py
     - stage: deploy cryptids.datasettes.com
