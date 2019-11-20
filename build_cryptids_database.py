@@ -11,6 +11,7 @@ from shapely.ops import transform
 BASE_DIR = os.path.dirname(__file__)
 
 try_these = (
+    "mod_spatialite",
     "/usr/local/lib/mod_spatialite.dylib",
     "/usr/lib/x86_64-linux-gnu/mod_spatialite.so",
     "/usr/lib/x86_64-linux-gnu/libspatialite.so.5",
@@ -50,9 +51,11 @@ def build_database(dbpath="cryptids.db"):
     # Enable Spatialite
     conn.enable_load_extension(True)
     for extension in try_these:
-        if os.path.exists(extension):
-            conn.load_extension(extension)
-    conn.execute('select InitSpatialMetadata(1)')
+        try:
+            conn.load_extension(extension)    
+            conn.execute('select InitSpatialMetadata(1)')
+        except:
+            continue
     # Create the database table
     conn.execute('''
         create table cryptids (
