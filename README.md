@@ -1,5 +1,7 @@
 # cryptozoology
 
+[![Travis CI](https://travis-ci.com/simonw/cryptozoology.svg?branch=master)](https://travis-ci.com/simonw/cryptozoology)
+
 Crowdsourcing a directory of cryptids and their range maps.
 
 ## Contributing
