@@ -16,7 +16,7 @@ jobs:
       before_script:
       - pip install -r requirements.txt
       - sudo apt-get update
-      - sudo apt-get install -y spatialite-bin libspatialite5
+      - sudo apt-get install -y spatialite-bin libspatialite7
       - pip install datasette
       - npm install -g now
       script:
