@@ -1,0 +1,21 @@
+{
+  "type": "Feature",
+  "properties": {
+    "additional_url": "https://www.singularfortean.com/singularjournal/2018/3/11/cadborosaurus",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cadborosaurus",
+    "name": "Cadborosaurus / Caddy",
+    "description": "Cadborosaurus willsi is said by witnesses to resemble a serpent with vertical coils or humps in tandem behind the horse-like head and long neck, with a pair of small elevating front flippers, and either a pair of hind flippers, or a pair of large webbed hind flippers fused to form a large fan-like tail region that provides powerful forward propulsion.",
+    "first_sighted": 1700,
+    "last_sighted": 2009
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
