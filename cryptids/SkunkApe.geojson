@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Skunk_ape",
+    "name": "Skunk Ape",
+    "description": "The skunk ape, also known as the swamp cabbage man, swamp ape, stink ape, Florida Bigfoot, Louisiana Bigfoot, myakka ape, swampsquatch, and myakka skunk ape, is a humanoid creature said to inhabit the U.S. states of Florida,[1] North Carolina, and Arkansas, although reports from Florida are most common. It is named for its appearance and for the unpleasant odor that is said to accompany it.",
+    "first_sighted": 1960,
+    "last_sighted": 1974
   },
   "geometry": {
     "type": "Polygon",
