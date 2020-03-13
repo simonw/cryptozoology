@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nahuelito",
+    "name": "Nahuelito",
+    "description": "Nahuelito is a lake monster reported to live in Nahuel Huapi Lake, Patagonia, Argentina. Like Nessie, the Loch Ness Monster, the Argentine creature is named after the lake it resides in and has been described as a giant serpent or a huge hump, as well as a plesiosaur.",
+    "first_sighted": 1880 ,
+    "last_sighted": 1922
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
