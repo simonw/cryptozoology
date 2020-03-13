@@ -1,0 +1,22 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Loch_Ness_Monster",
+    "name": "Loch Ness Monster",
+    "description": "In Scottish folklore, the Loch Ness Monster or Nessie (Scottish Gaelic: Uilebheist Loch Nis[4]) is said to be a creature that inhabits Loch Ness in the Scottish Highlands. It is often described as large in size with a long neck and one or more humps protruding from the water. Popular interest and belief in the creature have varied since it was brought to worldwide attention in 1933. Evidence of its existence is anecdotal, with a few disputed photographs and sonar readings.
+
+The scientific community regards the Loch Ness Monster as a phenomenon without biological basis, explaining sightings as hoaxes, wishful thinking, and the misidentification of mundane objects.",
+    "first_sighted": 565,
+    "last_sighted": 2014
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
