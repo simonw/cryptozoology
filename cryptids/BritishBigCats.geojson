@@ -1,10 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/British_big_cats",
+    "name": "British Big Cats",
+    "description": "In British folklore, British big cats, also referred to as ABCs (Alien, or Anomalous, Big Cats), phantom cats and mystery cats, are reports and incidents of Felidae not native to Britain but supposed to inhabit the British countryside.",
+    "first_sighted": 1760,
     "last_sighted":
   },
   "geometry": {

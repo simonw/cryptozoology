@@ -1,9 +1,9 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ebu_gogo",
+    "name": "Ebu Gogo",
+    "description": "The Ebu Gogo are a group of human-like creatures that appear in the folklore of Flores, Indonesia.",
     "first_sighted": ,
     "last_sighted":
   },

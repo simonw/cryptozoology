@@ -1,11 +1,13 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mogollon_Monster",
+    "name": "Mogollon Monster",
+    "description": "In Arizona folklore, the Mogollon Monster (/mʌɡɪˈjoʊn/ or /moʊɡəˈjoʊn/)[1] is a creature said to dwell in central and eastern Arizona along the Mogollon Rim.
+
+Reports of footprints, video, and hair samples have been documented by enthusiasts. Mainstream biologists remain skeptical to the existence of such a creature.",
+    "first_sighted": 1903,
+    "last_sighted": 2004
   },
   "geometry": {
     "type": "Polygon",

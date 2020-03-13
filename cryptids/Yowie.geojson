@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yowie",
+    "name": "Yowie",
+    "description": "Yowie is one of several names for an Australian folklore entity reputed to live in the Outback. The creature has its roots in Aboriginal oral history. In parts of Queensland, they are known as quinkin (or as a type of quinkin), and as joogabinna,[1] in parts of New South Wales they are called Ghindaring, jurrawarra, myngawin, puttikan, doolaga, gulaga and thoolagal.[1] Other names include yaroma, noocoonah, wawee, pangkarlangu, jimbra and tjangara.[1][2][3] Yowie-type creatures are common in Aboriginal Australian legends, particularly in the eastern Australian states.[4]",
+    "first_sighted": 1870,
+    "last_sighted": 2014
   },
   "geometry": {
     "type": "Polygon",

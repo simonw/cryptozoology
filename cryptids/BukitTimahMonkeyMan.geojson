@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bukit_Timah_Monkey_Man",
+    "name": "Bukit Timah Monkey Man",
+    "description": "The Bukit Timah Monkey Man, commonly abbreviated as BTM or BTMM, is a creature said to inhabit Singapore,[1] chiefly in the forested Bukit Timah region. The creature is often cited as a forest-dwelling hominid or primate, and is also accounted for as being immortal;[citation needed] however, its exact identity remains unknown, and its existence disputed. Documentation of the BTM is sparse and scattered; the creature is largely considered a product of local folklore.",
+    "first_sighted": 1805,
+    "last_sighted": 2008
   },
   "geometry": {
     "type": "Polygon",

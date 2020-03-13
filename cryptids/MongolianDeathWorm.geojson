@@ -1,10 +1,10 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongolian_death_worm",
+    "name": "Mongolian Death Worm",
+    "description": "It is shaped like a sausage about two feet long, has no head nor leg and it is so poisonous that merely to touch it means instant death. It lives in the most desolate parts of the Gobi Desert.",
+    "first_sighted": 1926,
     "last_sighted":
   },
   "geometry": {

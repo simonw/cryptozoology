@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lizard_Man_of_Scape_Ore_Swamp",
+    "name": "Lizard Man of Scape Ore Swamp",
+    "description": "In the folklore of Lee County, South Carolina, the Lizard Man of Scape Ore Swamp (also known as the Lizard Man of Lee County) is an entity said to inhabit the swampland of the region. First mentioned in the late 1980s, the purported sightings and damage attributed to the creature yielded a significant amount of newspaper, radio and television publicity.",
+    "first_sighted": 1988,
+    "last_sighted": 2015
   },
   "geometry": {
     "type": "Polygon",

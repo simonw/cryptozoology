@@ -1,9 +1,9 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yeren",
+    "name": "Yeren",
+    "description": "a legendary creature said to reside in the remote mountainous forested regions of western Hubei.",
     "first_sighted": ,
     "last_sighted":
   },

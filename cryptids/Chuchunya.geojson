@@ -1,9 +1,9 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chuchuna",
+    "name": "Chuchuna",
+    "description": "In Russian folklore, the Chuchuna is an entity said to dwell in Siberia. It has been described as six to seven feet tall and covered with dark hair.",
     "first_sighted": ,
     "last_sighted":
   },
