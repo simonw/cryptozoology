@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tahoe_Tessie",
+    "name": "Tahoe Tessie",
+    "description": "In Lake Tahoe folklore, Tahoe Tessie is a creature which resides in North America's largest alpine lake, Lake Tahoe, located in Nevada and California. Founder of the University of California, Davis's Tahoe Research Group Charles R. Goldman attributes claimed sightings to paredolia and the mistaken identification of a large breed of fish introduced to Lake Tahoe during trout and mackinaw plantings. ",
+    "first_sighted": ,
+    "last_sighted":
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

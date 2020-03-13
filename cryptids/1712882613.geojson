@@ -1,0 +1,21 @@
+{
+  "type": "Feature",
+  "properties": {
+    "additional_url": "https://cryptidz.fandom.com/wiki/Kussie",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kussie",
+    "name": "Kussie",
+    "description": "Kussie (クッシー, Kusshī) is a Japanese lake monster said to be living in Hokkaidō's Lake Kussharo. The naming convention was likely borrowed from that of Loch Ness's Nessie. Kusshii is reported as being between 10 and 20 meters in length (30 to 60 ft), and the most commonly cited coloration is a dark brown. The neck is of a moderate length, and humps are sometimes mentioned. The head of the creature is said to look somewhat like that of a horse, only larger, with silver eyes, and is sometimes described as having two protrusions like giraffe horns on top. A few reports mention the creature making strange grunting or clicking noises. Interestingly, many witnesses report having felt distinctly uneasy, disturbed, or “icky,” upon seeing the creature.",
+    "first_sighted": 1940,
+    "last_sighted": 2002
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

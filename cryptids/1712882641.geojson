@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ogopogo",
+    "name": "Ogopogo",
+    "description": "In Canadian folklore, Ogopogo or Naitaka (Salish: n'ha-a-itk, spirit of the lake) is a lake monster reported to live in Okanagan Lake, in the Okanagan valley of British Columbia, Canada. The most common description of Ogopogo is a 40 to 50-foot-long (12 to 15 m) sea serpent. Ogopogo has been allegedly seen by First Nations people since the 19th century.",
+    "first_sighted": 1872,
+    "last_sighted": 2018
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

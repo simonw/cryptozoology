@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mokele-mbembe",
+    "name": "Mokele-mbembe",
+    "description": "In Congo River Basin mythology, Mokele-mbembe (Lingala: mókɛlɛ ᵐbɛ́ᵐbɛ, one who stops the flow of rivers) is a water-dwelling entity, sometimes described as a living creature, sometimes as a spirit.",
+    "first_sighted": 1909,
+    "last_sighted": 2018
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

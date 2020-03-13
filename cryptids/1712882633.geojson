@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Manipogo",
+    "name": "Manipogo",
+    "description": "In Canadian folklore, the Manipogo is a lake monster said to live in Lake Manitoba, Manitoba, Canada. The creature was dubbed Manipogo in 1960, the name echoing British Columbia's Ogopogo.[1] There is also a Lake Winnipegosis sea monster called Winnepogo, thought possibly to be the same creature as the lakes are connected.",
+    "first_sighted": 1800,
+    "last_sighted": 2011
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

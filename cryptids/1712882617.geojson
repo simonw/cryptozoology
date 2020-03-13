@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Selma_(lake_monster)",
+    "name": "Selma",
+    "description": "In Norwegian folklore, Selma is a legendary sea serpent said to live in the 13 km long Lake Seljord (Seljordsvatnet) in Seljord, Telemark, Norway.",
+    "first_sighted": 1750,
+    "last_sighted":
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

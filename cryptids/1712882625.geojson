@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lagarflj%C3%B3t_Worm",
+    "name": "Lagarfljót worm",
+    "description": "In Icelandic folklore, the Lagarfljótsormur or Lagarfljót worm is a lake monster purported to live in Lagarfljót, a lake by the town of Egilsstaðir. ",
+    "first_sighted": 1345,
+    "last_sighted": 2012
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
