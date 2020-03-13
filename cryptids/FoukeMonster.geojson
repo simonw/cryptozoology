@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "",
-    "name": "",
-    "description": "",
-    "first_sighted": ,
-    "last_sighted":
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fouke_Monster",
+    "name": "Fouke Monster",
+    "description": "In Arkansas folklore, the Fouke Monster is said to have been seen in Fouke in Miller County, Arkansas, during the early 1970s. The creature was accused of attacking a local family. Initial sightings of the creature were concentrated in the Jonesville/Boggy Creek area, where it was blamed for the destruction of local livestock. Later, sightings were reported several hundred miles to the north and the east of Fouke. The monster may initially have been created when misidentified bears were seen and some of the purported tracks may have been forged.",
+    "first_sighted": 1953,
+    "last_sighted": 1998
   },
   "geometry": {
     "type": "Polygon",
