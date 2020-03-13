@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Steller%27s_sea_ape",
+    "name": "Stellers Sea Ape",
+    "description": "Steller's sea ape is a purported marine mammal observed by German zoologist Georg Steller on August 10, 1741, around the Shumagin Islands, Alaska. It was described as being 5 ft (1.5 m) long, with a dog-like head; long, drooping whiskers; an elongated but fat body; a thick fur coat; no limbs; and two tail fins much like a shark. He described the creature as being playful and inquisitive, much like a monkey. After observing it for two hours, he attempted to shoot and collect the creature, but missed, and the creature swam away. A similar creature was seen in June, 1965, by sailor Miles Smeeton and company off Atka Island, Alaska.",
+    "first_sighted": 1741,
+    "last_sighted": 1965
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
