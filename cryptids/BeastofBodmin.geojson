@@ -1,11 +1,11 @@
 {
   "type": "Feature",
   "properties": {
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Beast_of_Exmoor",
-    "name": "Beast of Exmoor",
-    "description": "The Beast of Exmoor is a cryptozoological felid (see phantom cat) that is reported to roam the fields of Exmoor in Devon and Somerset in the United Kingdom.",
-    "first_sighted": 1970,
-    "last_sighted": 2001
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beast_of_Bodmin_Moor",
+    "name": "Beast of Bodmin Moor",
+    "description": "In British folklore, the Beast of Bodmin Moor, also known as the Beast of Bodmin[1] (Cornish: Best Goon Brenn) is a phantom wild cat purported to live in Cornwall, England, United Kingdom. Bodmin Moor became a centre of purported sightings after 1978, with occasional reports of mutilated slain livestock; the alleged panther-like cats of the same region came to be popularly known as the Beast of Bodmin Moor.",
+    "first_sighted": 1978,
+    "last_sighted":
   },
   "geometry": {
     "type": "Polygon",
