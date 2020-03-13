@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Giant_salamander",
+    "name": "Trinity Alps Giant Salamander",
+    "description": "The Cryptobranchidae are a family of fully aquatic salamanders commonly known as the giant salamanders. A single species, the hellbender (Cryptobranchus alleganiensis), inhabits the eastern United States, with species also inhabiting China and Japan. They are the largest living amphibians known today. The Japanese giant salamander (Andrias japonicus) reaches up to 1.44 m (4.7 ft) in length, feeds at night on fish and crustaceans, and has been known to live for more than 50 years in captivity.[1] The South China giant salamander (Andrias sligoi) can reach a length of 1.8 m (5.9 ft).[2]",
+    "first_sighted": ,
+    "last_sighted":
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
