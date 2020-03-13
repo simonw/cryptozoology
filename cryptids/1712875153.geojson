@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dingonek",
+    "name": "Dingonek",
+    "description": "The dingonek is a creature said to have been seen near Lake Victoria in 1910 by big game hunter John Alfred Jordan and members of his hunting party, as recounted by fellow big-game hunter Edgar Beecher Bronson in his 1910 memoir In Closed Territory. This account was followed by an article published in 1913 in the East Africa Natural History Society by Charles William Hobley, in which he claims to have encountered further accounts of similarly described creatures. In 1918, an article published by MacLean's declared that the beast was a newly discovered animal species.",
+    "first_sighted": 1910,
+    "last_sighted":1918
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

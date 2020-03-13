@@ -1,0 +1,21 @@
+{
+  "type": "Feature",
+  "properties": {
+    "additional_url": "https://www.ancient-origins.net/myths-legends-europe/brosno-dragon-0011946",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brosno_dragon",
+    "name": "Brosno Dragon",
+    "description": "The Brosno dragon, also known as Brosnya (Russian: Бросня), is a lake monster which in Russian folklore is said to inhabit Lake Brosno, near Andreapol in western Russia. It is described as resembling a dragon and is the subject of a number of regional legends, some which are said to date back to the 13th century.",
+    "first_sighted": 1200,
+    "last_sighted": 2010
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

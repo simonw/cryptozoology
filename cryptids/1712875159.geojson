@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Igopogo",
+    "name": "Igopogo",
+    "description": "In Canadian folklore, the Igopogo is a creature said to dwell in Lake Simcoe, Ontario.[1] The creature's name is ostensibly based on the Ogopogo, of Lake Okanagan, British Columbia, and also the title 1952 book I Go Pogo, a slogan often mentioned in the comic. It is also called Kempenfelt Kelly after the bay that extends from the lake into the city of Barrie, Ontario. While many scientists disagree with its existence, the tribe continues to be loyal to the Igopogo.",
+    "first_sighted": ,
+    "last_sighted":
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

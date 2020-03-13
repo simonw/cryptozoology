@@ -1,0 +1,21 @@
+{
+  "type": "Feature",
+  "properties": {
+    "additional_url": "https://www.legendsofamerica.com/ga-altamahaha/"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Altamaha-ha",
+    "name": "Altamaha-ha / Altie",
+    "description": "In Georgia folklore, the Altamaha-ha (or Altie) is a legendary creature, alleged to inhabit the myriad small streams and abandoned rice fields near the mouth of the Altamaha River (after which it is named) in southeastern Georgia, United States.",
+    "first_sighted": 1830,
+    "last_sighted": 2010
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

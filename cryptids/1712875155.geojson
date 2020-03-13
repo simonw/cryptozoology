@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dobhar-ch%C3%BA",
+    "name": "Dobhar-chú",
+    "description": "The Dobhar-chú (Irish pronunciation: [ˈd̪ˠaɾˠxuː], lit. water dog or water hound) or King Otter is a creature of Irish folklore. It resembles both a dog and an otter, though it sometimes is described as half dog, half fish. It lives in water and has fur with protective properties.",
+    "first_sighted": 1600,
+    "last_sighted":
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

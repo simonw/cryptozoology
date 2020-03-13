@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Champ_(folklore)",
+    "name": "Champ / Champy",
+    "description": "In American folklore, Champ or Champy[1] is the name of a lake monster said to live in Lake Champlain, a 125-mile (201 km)-long body of fresh water shared by New York and Vermont, with a portion extending into Quebec, Canada.[2] The legend of the monster is considered a draw for tourism in the Burlington, Vermont and Plattsburgh, New York areas.",
+    "first_sighted": 1609,
+    "last_sighted": 2016
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

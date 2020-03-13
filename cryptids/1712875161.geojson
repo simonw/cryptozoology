@@ -1,0 +1,20 @@
+{
+  "type": "Feature",
+  "properties": {
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Issie",
+    "name": "Issie",
+    "description": "Issie (イッシー, Isshī) is a Japanese lake monster said to lurk in Lake Ikeda, on Kyushu Island.[1] It is described as being saurian in appearance. The name is formed in analogy with Nessie (the Loch Ness Monster).",
+    "first_sighted": 1978,
+    "last_sighted": 1991
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}

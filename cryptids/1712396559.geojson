@@ -1,0 +1,21 @@
+{
+  "type": "Feature",
+  "properties": {
+    "additional_url": "https://www.utahoutdooractivities.com/bearlm1.html",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bear_Lake_monster",
+    "name": "Bear Lake Monster",
+    "description": "The Bear Lake Monster is a being appearing in folklore near Bear Lake, on the Utah–Idaho border.",
+    "first_sighted": 1868,
+    "last_sighted": 2002
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+
+        ]
+      ]
+    ]
+  }
+}
