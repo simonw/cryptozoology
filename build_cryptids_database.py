@@ -1,4 +1,7 @@
-import sqlite3
+try:
+    import pysqlite3 as sqlite3
+except ImportError:
+    import sqlite3
 from functools import partial, wraps
 import json
 import os

@@ -1,2 +1,3 @@
+pysqlite3-binary
 Shapely==1.7.0
 pyproj==2.6.0
