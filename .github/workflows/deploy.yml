@@ -20,12 +20,12 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
+    - name: Install SpatiaLite and libgeos
+      run: apt-get install spatialite-bin libspatialite5 libgeos-dev
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Install SpatiaLite
-      run: apt-get install spatialite-bin libspatialite5
     - name: Build cryptids.db database
       run: python build_cryptids_database.py
     # Only run the deploy if push was to master
