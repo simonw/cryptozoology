@@ -21,7 +21,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
     - name: Install SpatiaLite and libgeos
-      run: sudo apt-get install spatialite-bin libspatialite5 libgeos-dev
+      run: sudo apt-get install spatialite-bin libspatialite-dev libgeos-dev
     - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
