@@ -53,12 +53,17 @@ def build_database(dbpath="cryptids.db"):
     conn = sqlite3.connect(dbpath)
     # Enable Spatialite
     conn.enable_load_extension(True)
+    spatialite_found = False
     for extension in try_these:
         try:
             conn.load_extension(extension)    
             conn.execute('select InitSpatialMetadata(1)')
+            spatialite_found = True
         except:
             continue
+    assert spatialite_found, 'Did not find spatialite - looked in {}'.format(
+        repr(try_these)
+    )
     # Create the database table
     conn.execute('''
         create table cryptids (
