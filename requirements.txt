@@ -1,2 +1,2 @@
-Shapely==1.6.4.post2
-pyproj==1.9.5.1
+Shapely==1.7.0
+pyproj==2.6.0
