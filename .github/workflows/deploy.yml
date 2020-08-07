@@ -48,4 +48,5 @@ jobs:
           --service=cryptids \
           --install=datasette-leaflet-geojson \
           --install=datasette-cluster-map \
-          --install=datasette-haversine
+          --install=datasette-haversine \
+          --install=datasette-graphql
