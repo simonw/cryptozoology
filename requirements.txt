@@ -1,4 +1,8 @@
 pysqlite3-binary
 Shapely==1.7.0
 pyproj==2.6.0
-datasette~=0.39
+datasette>=0.39
+datasette-leaflet-geojson
+datasette-cluster-map
+datasette-haversine
+datasette-graphql
