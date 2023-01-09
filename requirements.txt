@@ -6,3 +6,4 @@ datasette-leaflet-geojson
 datasette-cluster-map
 datasette-haversine
 datasette-graphql
+datasette-auth-passwords

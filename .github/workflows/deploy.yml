@@ -38,6 +38,8 @@ jobs:
         service_account_key: ${{ secrets.GCP_SA_KEY }}
     - name: Deploy to Cloud Run
       if: github.ref == 'refs/heads/master'
+      env:
+        SIMON_HASH: ${{ secrets.SIMON_HASH }}
       run: |-
         gcloud config set run/region us-central1
         gcloud config set project datasette-222320
@@ -49,4 +51,6 @@ jobs:
           --install=datasette-leaflet-geojson \
           --install=datasette-cluster-map \
           --install=datasette-haversine \
-          --install=datasette-graphql
+          --install=datasette-graphql \
+          --install=datasette-auth-passwords \
+          --plugin-secret datasette-auth-passwords simon_password_hash "$SIMON_HASH"
