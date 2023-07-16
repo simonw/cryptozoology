@@ -48,7 +48,7 @@ jobs:
           --metadata=metadata.json \
           --template-dir=templates \
           --service=cryptids \
-          --install=datasette-leaflet-geojson \
+          --install=datasette-geojson-map \
           --install=datasette-cluster-map \
           --install=datasette-haversine \
           --install=datasette-graphql \
